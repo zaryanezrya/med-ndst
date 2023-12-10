@@ -13,7 +13,7 @@ models['rfc'] = joblib.load('models/rfc.joblib')
 models['gnb'] = joblib.load('models/gnb.joblib')
 models['logreg'] = joblib.load('models/logreg.joblib')
 
-st.write("# Анализ наличия/отсутствия ЖЭС")
+st.write("# Анализ вероятности развития ЖЭС")
 data = {}
 data['Возраст'] = st.slider('Возраст, лет', min_value=10, max_value=59, value=14)
 data['Рост,м'] = st.slider('Рост, м', min_value=1.2, max_value=2.0, value=1.86)
